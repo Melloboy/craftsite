@@ -1,0 +1,21 @@
+{% extends "_layout" %}
+
+{% block content %}
+  <h1 class="text-4xl text-black font-display my-4">{{ entry.title }}</h1>
+  <h2> {{ entry.articleExcerpt }} </h2>
+  <time class="text-sm block pb-4" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
+
+  {% if entry.newsArticleImages|length %}
+    {% for image in entry.newsArticleImages.all() %}
+      <img src="{{ image.url }}" alt="{{ image.title }}" />
+    {% endfor %}
+  {% endif %}
+
+  <p>{{ entry.articleImageCaption }}</p>
+
+  <p>{{ entry.articleBodyCopy }}</p>
+
+  
+  
+  
+{% endblock %}

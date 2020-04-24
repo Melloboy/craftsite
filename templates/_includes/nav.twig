@@ -1,0 +1,70 @@
+{% set firstSegment = craft.app.request.getSegment(1) %}
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #DB4D58">
+    <a href="{{ siteUrl }}" class="navbar-brand">Skate Central</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar8">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar8">
+        <ul class="navbar-nav abs-center-x">
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8888/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8888/skating">Skaters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8888/about">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Navbar 
+<nav class="navbar navbar-light" style="background-color: #DB4D58">
+	<div class="container">
+		<a class="navbar-brand" href="{{ siteUrl }}">
+			<img src="https://visualpharm.com/assets/447/Skateboard%20Wheel-595b40b85ba036ed117dbab0.svg" width="15%" height="15%" class="d-inline-block align-center" alt="Skatewheel">
+			Menu
+		</a>
+
+	</nav>
+ 
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #DB4D58">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+        <a class="navbar-brand" href=" {{ siteUrl }} ">Home</a>
+        <div class="collapse navbar-collapse mr-auto" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Blog <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+	<!-- <div class="col-sm-6">
+	      <a class="text-blue-600 {{ firstSegment == '' ? 'border-b border-blue-400' }}" href="{{ siteUrl }}">
+	        <div style="width: 10%">
+	          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	            <path fill="brown">  
+	            <path xmlns="http://www.w3.org/2000/svg" d="M 9 3 C 5.134 3 2 7.029 2 12 C 2 16.971 5.134 21 9 21 L 11.6875 21 C 8.9285 19.439 7 16.001 7 12 C 7 7.999 8.9285 4.561 11.6875 3 L 9 3 z M 15 3 C 11.134 3 8 7.029 8 12 C 8 16.971 11.134 21 15 21 C 18.866 21 22 16.971 22 12 C 22 7.029 18.866 3 15 3 z M 15 9 C 16.105 9 17 10.343 17 12 C 17 13.657 16.105 15 15 15 C 13.895 15 13 13.657 13 12 C 13 10.343 13.895 9 15 9 z"/>
+	            </svg>
+	        </div>
+	      </a>
+	    </div>
+	    <div class="col-sm">
+	      <a class="text-blue-600 {{ firstSegment == 'blog' ? 'border-b border-blue-400' }}" href="{{ url('blog') }}">Blog</a>
+	    </div>
+	    <div class="col-sm">
+	      <a class="text-blue-600 {{ firstSegment == 'about' ? 'border-b border-blue-400' }}" href="{{ url('about') }}">About</a>
+	    </div>
+	    <div class="col-sm">
+	      <a class="text-blue-600 {{ firstSegment == 'about' ? 'border-b border-blue-400' }}" href="{{ url('about') }}">About</a>
+	    </div> -->
+</div>
